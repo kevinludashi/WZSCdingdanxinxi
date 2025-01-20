@@ -118,7 +118,7 @@
         </div>
 
         <div class="header">
-            <h1>年费返还订单信息明细及状态</h1>
+            <h1>日常考核任务订单信息明细及状态</h1>
             <!-- 倒计时显示 -->
             <div id="countdown" style="font-size: 1.5em; font-weight: bold; color: red;">倒计时：正在加载...</div>
         </div>
@@ -222,7 +222,7 @@
 
         // 倒计时功能
         function startCountdown() {
-            const deadline = new Date("2024-12-31T23:59:59"); // 设置为指定日期
+            const deadline = new Date("2025-03-31T23:59:59"); // 设置为指定日期
             const countdownElement = document.getElementById('countdown');
             
             // 确保倒计时元素存在
@@ -237,7 +237,7 @@
         
                 if (timeRemaining <= 0) {
                     clearInterval(countdownTimer);
-                    countdownElement.textContent = "倒计时结束！";
+                    countdownElement.textContent = "暂未设置新的倒计时！";
                 } else {
                     const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
                     const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
